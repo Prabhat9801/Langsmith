@@ -9,6 +9,9 @@ from pydantic import BaseModel, Field
 from langsmith import traceable
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.graph import StateGraph, START, END
+import os 
+
+os.environ["LANGCHAIN_PROJECT"] = "UPSC's Evaluator"
 
 # ---------- Setup ----------
 load_dotenv()
