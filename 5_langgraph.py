@@ -12,7 +12,7 @@ from langgraph.graph import StateGraph, START, END
 
 # ---------- Setup ----------
 load_dotenv()
-model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+model = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
 # ---------- Structured schema & model ----------
 class EvaluationSchema(BaseModel):
